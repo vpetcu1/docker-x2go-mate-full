@@ -16,5 +16,8 @@ RUN rm -rf /tmp/*
 RUN apt-get -y autoclean && apt-get autoremove -y
 RUN rm -rf /var/lib/apt/lists/*
 
+COPY ["*.sh", "/"]
+RUN chmod +x /*.sh
+
 EXPOSE 22
 ENTRYPOINT ["/x2go-mate-full-entrypoint.sh"]

@@ -1,1 +1,0 @@
-rm -rf /home/$REMOTE_USER/*x2go*-errors

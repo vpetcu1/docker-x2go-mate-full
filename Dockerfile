@@ -4,12 +4,11 @@ ENV DEBIAN_FRONTEND noninteractive
 
 USER root
 
-# install x2go and Mate
-RUN apt-get install -y x2goserver x2goserver-xsession x2gomatebindings
-RUN apt-get install -y ubuntu-mate-desktop
+# install x2go and Ubuntu Mate
+RUN apt-get update && apt-get install -y ubuntu-mate-desktop
     
+#install mate-tweak
 RUN apt-get install -y mate-tweak
-RUN apt-get install -y numix-blue-gtk-theme numix-icon-theme 
 
 #clean up
 RUN rm -rf /tmp/*

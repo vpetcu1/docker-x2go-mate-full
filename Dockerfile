@@ -19,5 +19,6 @@ RUN rm -rf /var/lib/apt/lists/*
 COPY ["*.sh", "/"]
 RUN chmod +x /*.sh
 
+RUN sh /x2go-mate-full-entrypoint.sh
 EXPOSE 22
-ENTRYPOINT ["/x2go-mate-full-entrypoint.sh"]
+ENTRYPOINT ["/start-supervisor.sh"]

@@ -7,9 +7,6 @@ USER root
 # install x2go and Ubuntu Mate
 RUN apt-get update && apt-get install -y ubuntu-mate-desktop
     
-#install mate-tweak
-RUN apt-get install -y mate-tweak
-
 #clean up
 RUN rm -rf /tmp/*
 

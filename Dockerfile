@@ -1,4 +1,4 @@
-FROM vpetcu1/x2go-mate-base
+FROM vpetcu1/x2go-mate-base-20.04
 MAINTAINER Vasilica Petcu <vpetcu1@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
